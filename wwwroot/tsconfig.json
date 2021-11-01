@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"strict":true,
+		"importHelpers": true,
+		"sourceMap": true,
+		"module": "ESNext",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"target": "ESNext",
+		"jsx": "react",
+		"strictPropertyInitialization": true,
+		"strictNullChecks": true,
+		"strictBindCallApply": true,
+		"removeComments": true,
+		"pretty": true,
+		"lib": [
+			"dom",
+			"es6",
+			"ESNext",
+			"ES2021"
+		],
+		"useDefineForClassFields": true,
+		"alwaysStrict": true,
+	},
+	"compileOnSave": true
+}

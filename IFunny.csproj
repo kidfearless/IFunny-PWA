@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>10</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="wwwroot\css\app.css" />
+		<None Include="wwwroot\favicon.ico" />
+		<None Include="wwwroot\icon-192.png" />
+		<None Include="wwwroot\icon-512.png" />
+		<None Include="wwwroot\index.html" />
+		<None Include="wwwroot\js\app.js" />
+		<None Include="wwwroot\js\app.js.map" />
+		<None Include="wwwroot\js\app.ts" />
+		<None Include="wwwroot\js\components\video.js" />
+		<None Include="wwwroot\js\components\video.js.map" />
+		<None Include="wwwroot\js\components\video.ts" />
+		<None Include="wwwroot\js\core\arbiter.js" />
+		<None Include="wwwroot\js\core\classes\Binder.js" />
+		<None Include="wwwroot\js\core\classes\Binding.js" />
+		<None Include="wwwroot\js\core\classes\Input.js" />
+		<None Include="wwwroot\js\core\classes\Region.js" />
+		<None Include="wwwroot\js\core\classes\State.js" />
+		<None Include="wwwroot\js\core\classes\ZingEvent.js" />
+		<None Include="wwwroot\js\core\dispatcher.js" />
+		<None Include="wwwroot\js\core\interpreter.js" />
+		<None Include="wwwroot\js\core\main.js" />
+		<None Include="wwwroot\js\core\util.js" />
+		<None Include="wwwroot\js\gestures\Distance.js" />
+		<None Include="wwwroot\js\gestures\Gesture.js" />
+		<None Include="wwwroot\js\gestures\Pan.js" />
+		<None Include="wwwroot\js\gestures\Rotate.js" />
+		<None Include="wwwroot\js\gestures\Swipe.js" />
+		<None Include="wwwroot\js\gestures\Tap.js" />
+		<None Include="wwwroot\js\ZingTouch.ts" />
+		<None Include="wwwroot\service-worker.js" />
+		<None Include="wwwroot\service-worker.js.map" />
+		<None Include="wwwroot\service-worker.ts" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+</Project>

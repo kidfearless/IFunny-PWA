@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script>
+            globalThis.PerformanceCounter = performance.now();
+            let once = false;
+            function PrintLoadTime()
+            {
+                if (!once)
+                {
+                    console.log(`It took ${performance.now() - PerformanceCounter} to load the page`);
+                    once = true;
+                }
+            }
+		</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>IFunny</title>
+		<base href="/" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link href="manifest.json" rel="manifest" />
+		<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+		<script>
+			navigator.serviceWorker.register("service-worker.js");
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<img id="loading" style="opacity: 0;" src="icon-512.png" />
+		</div>
+		<script src="/js/app.js" type="module"></script>
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</body>
+
+</html>
